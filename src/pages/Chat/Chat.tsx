@@ -13,7 +13,6 @@ const { Header, Content, Footer, Sider } = Layout;
 const { TextArea } = Input;
 const socket = io(SERVER);
 
-
 const Chat = () => {
     const [loading, setLoading] = useState<boolean>(false);
     const [messages, setMessages] = useState<string[]>([]);
