@@ -3,9 +3,9 @@ import { AuthContext } from "./AuthContext";
 import { message } from "antd";
 import { API, BEARER, IUser } from "../constants/constant";
 import { useEffect } from "react";
-import { getToken } from "./helper";
+import { getToken, setUser } from "./helper";
 
-const AuthProvider = ({ children }: any) => {
+const AuthProvider = ({ children }:any) => {
   const [userData, setUserData] = useState<IUser>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -26,8 +26,9 @@ const AuthProvider = ({ children }: any) => {
     }
   };
 
-  const handleUser = (user: any) => {
+  const handleUser = (user: IUser) => {
     setUserData(user);
+    setUser(user)
   };
 
   useEffect(() => {

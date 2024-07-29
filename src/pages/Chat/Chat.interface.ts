@@ -1,5 +1,6 @@
+import { IUser } from "../../constants/constant";
 
 export interface IMessage{
-    user : string
+    user : IUser
     message : string
 }

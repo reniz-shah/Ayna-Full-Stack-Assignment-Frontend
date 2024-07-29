@@ -37,7 +37,7 @@ const SignIn: React.FC = () => {
                 setToken(data.jwt);
                 setUser(data.user);
                 message.success(`Welcome back ${data.user.username} to Ayna Chat application!`);
-                navigate("/chat", { replace: true });
+                navigate("/chat");
             }
         } catch (error: any) {
             console.error(error);

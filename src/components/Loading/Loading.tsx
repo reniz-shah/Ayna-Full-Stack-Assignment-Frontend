@@ -1,4 +1,5 @@
 import { spiral } from 'ldrs'
+import './Loading.css'
 
 spiral.register()
 
@@ -7,11 +8,13 @@ spiral.register()
 function Loader() {
     return (
         <>
-            <l-spiral
-                size="40"
-                speed="0.9"
-                color="blue"
-            ></l-spiral>
+            <div className='Loader'>
+                <l-spiral
+                    size="50"
+                    speed="0.9"
+                    color="#022C4B"
+                ></l-spiral>
+            </div>
         </>
     );
 }
