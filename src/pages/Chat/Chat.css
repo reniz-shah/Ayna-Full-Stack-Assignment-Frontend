@@ -1,0 +1,40 @@
+.Layout {
+    height: 100vh;
+    width: 100vw;
+}
+
+.Header {
+    background-color: #fff;
+}
+
+.Content {
+    background-color: #fff;
+    margin: 24px 16px 0;
+    padding: 24px;
+}
+
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 25px;
+    gap: 20px;
+}
+
+.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    text-align: left;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{
+    height: 32px;
+}
