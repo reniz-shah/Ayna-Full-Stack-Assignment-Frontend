@@ -35,22 +35,28 @@ const Chat = () => {
     };
 
     const fetchMessages = async () => {
-        setLoading(true)
-        const response = await fetch(`${API}/messages?filters[users_permissions_user][$eq]=${parseInt(user.id)}`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${getToken()}`,
-            }
-        });
+        try {
+            setLoading(true)
+            const response = await fetch(`${API}/messages?filters[users_permissions_user][$eq]=${parseInt(user.id)}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${getToken()}`,
+                }
+            });
 
-        const data = await response.json();
-
-        if (data.data.length <= 0)
+            const data = await response.json();
+            console.log('data: ', data)
+            if (data.data.length <= 0)
+                setMessages([])
+            else
+                setMessages(data.data[0].attributes.messages);
+        } catch (error) {
             setMessages([])
-        else
-            setMessages(data.data[0].attributes.messages);
-        setLoading(false)
+        }
+        finally {
+            setLoading(false)
+        }
     }
 
     useEffect(() => {
