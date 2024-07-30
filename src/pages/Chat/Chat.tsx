@@ -84,7 +84,7 @@ const Chat = () => {
                     collapsedWidth="0"
                 >
                     <div className="logo">
-                        <img src="../../assets/ayna_logo.jpg" alt="Logo" />
+                        <img src="https://reniz-shah.github.io/Ayna-Full-Stack-Assignment-Frontend/assets/ayna_logo-ybOeh6yF.jpg" alt="Logo" />
                         <h3>Ayna</h3>
                     </div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
