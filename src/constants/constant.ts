@@ -1,7 +1,7 @@
 
 export const AVATAR_API: string = "https://ui-avatars.com/api";
-export const API: string = "http://localhost:1337/api";
-export const SERVER: string = "http://localhost:1337";
+export const API: string = "https://ayna-full-stack-assignment-backend.onrender.com/api";
+export const SERVER: string = "https://ayna-full-stack-assignment-backend.onrender.com";
 export const AUTH_TOKEN: string = "authToken";
 export const USER: string = "user";
 export const BEARER: string = "Bearer";
