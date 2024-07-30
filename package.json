@@ -1,7 +1,7 @@
 {
   "name": "ayna-full-stack-assignment-frontend",
   "private": true,
-  "homepage": "https://reniz-shah.github.io/Ayna-Full-Stack-Assignment-Frontend",
+  "homepage": "/Ayna-Full-Stack-Assignment-Frontend",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
